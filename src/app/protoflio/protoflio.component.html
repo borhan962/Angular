@@ -1,0 +1,43 @@
+<section id="potfolio" class="my-5 p-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center g-5">
+            <div class="col-md-12 text-center">
+                <h2>PORTFOLIO COMPONENT</h2>
+                <div class="star my-2 d-flex justify-content-center align-items-center text-center">
+                    <div class="line rounded"></div>
+                    <i class="fas fa-star"></i>
+                    <div class="line rounded"></div>
+                </div>
+            </div>
+            <div class="col-md-4 work " (click)="showModal(el)" *ngFor="let el of data" [id]="el.id"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="img position-relative">
+                    <img [src]="el.image" class="w-100 rounded">
+                    <div class="bg-layer d-flex justify-content-center align-items-center rounded">
+                        <i class="fas fa-plus fa-4x text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Modal -->
+    
+    <div class="modal fade layer" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl h-100">
+                <div class="modal-body d-flex align-items-center h-100">
+                    <div class="container mb-4">
+                        <div class="row row-cols-1 g-4">
+                            <div class="col">
+                                <div class="img w-60 m-auto text-center">
+                                    <img [src]="cardDetails.image" class="w-50 rounded" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>

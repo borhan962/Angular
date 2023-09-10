@@ -1,0 +1,23 @@
+.btn-social{
+    border-radius: 100%;
+    display: inline-flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+}
+.lead{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.lead2{
+    font-size: 1rem;
+}
+
+footer{
+    background-color: #2C3E50;
+}
+.copyright{
+    background-color: #1A252F;
+}
